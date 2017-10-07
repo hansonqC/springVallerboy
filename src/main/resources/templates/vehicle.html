@@ -5,8 +5,8 @@
 </head>
 <body><h1>
 <center>
-    <span th:if="${info gt 2000}" th:text="${info}" style="color:red"></span>
-    <span th:if="${info lt 2000}" th:text="${info}" style="color:green"></span>
+    <span th:if="${info gt 2000}" th:text="${info}" th:style="'color: '+ ${infoColor}"></span>
+    
 </center></h1>
 
 <br/>
