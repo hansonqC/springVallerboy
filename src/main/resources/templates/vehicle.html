@@ -3,8 +3,11 @@
 <head>
     <title>Title</title>
 </head>
-<body>
-<center><span th:text="${info}"></span></center>
+<body><h1>
+<center>
+    <span th:if="${info gt 2000}" th:text="${info}" style="color:red"></span>
+    <span th:if="${info lt 2000}" th:text="${info}" style="color:green"></span>
+</center></h1>
 
 <br/>
 
